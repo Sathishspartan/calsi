@@ -1,0 +1,81 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #d9cccc;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #9ad4e9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #045207;
+}
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #429a47;
+}
+
+.form input, .form select, .form button {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+}
+
+#entries-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#entries-list li {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid;
+}
+
+.income {
+    border-color: green;
+}
+
+.expense {
+    border-color: red;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filters label {
+    margin: 0 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button.edit-btn {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 5px 10px;
+}
+
+button.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 5px 10px;
+}

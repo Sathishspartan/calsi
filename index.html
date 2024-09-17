@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expense Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income & Expense Calculator</h1>
+        <div class="summary">
+            <div>Total Income: <span id="total-income">0</span></div>
+            <div>Total Expense: <span id="total-expense">0</span></div>
+            <div>Balance: <span id="net-balance">0</span></div>
+        </div>
+        <div class="form">
+            <input type="text" id="description" placeholder="Enter description" required>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button id="add-btn">Add Entry</button>
+        </div>
+        <div class="filters">
+            <label><input type="radio" name="filter" value="all" checked> All</label>
+            <label><input type="radio" name="filter" value="income"> Income</label>
+            <label><input type="radio" name="filter" value="expense"> Expense</label>
+        </div>
+        <ul id="entries-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
